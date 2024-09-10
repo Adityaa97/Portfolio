@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya_portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.02rem;
+        }
+
+        .left {
+            font-size: 2.0rem;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 60px 0;
+            flex-wrap: wrap;
+        }
+
+        .first>div {
+            width: 35%;
+            margin: 10px;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        .rightSection img {
+            width: 80%;
+            border-radius: 50%;
+            object-fit: cover;
+            animation: liquidFloat 6s ease-in-out infinite;
+        }
+        @keyframes liquidFloat {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+
+        .gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .second {
+            max-width: 80vw;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        main hr {
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .second h1 {
+            font-size: 1.9rem;
+            margin-bottom: 20px;
+        }
+
+        .second .box {
+            background-color: rgb(18, 18, 62);;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border-radius: 30px;
+        }
+
+        .second .vertical {
+            height: auto;
+            width: 25%;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            color: black;
+        }
+
+        .image-top {
+            width: 40px;
+            margin-bottom: 15px;
+        }
+
+        .vertical-text {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #9c97f1;
+        }
+
+        .vertical-dasc {
+            font-size: 0.8rem;
+            color: gray;
+        }
+
+        footer {
+            background-color: rgb(18, 18, 62);
+            color: white;
+            padding: 20px 10%;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .footer-content div {
+            margin: 10px 0;
+            width: 30%;
+            text-align: left;
+        }
+
+        .footer-content h3 {
+            color: rgb(170, 107, 228);
+            margin-bottom: 10px;
+        }
+
+        .footer-content p,
+        .footer-content a {
+            color: gray;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+
+        .footer-content a:hover {
+            color: rgb(170, 107, 228);
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            border-top: 1px solid gray;
+            padding-top: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            .first>div {
+                width: 80%;
+                text-align: center;
+            }
+
+            .rightSection img {
+                width: 100%;
+            }
+
+            .second .vertical {
+                width: 100%;
+                margin: 20px 0;
+            }
+
+            .footer-content div {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Aditya Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About me</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="first">
+            <div class="leftSection">Hi, my Name is <span class="purple">Aditya</span>
+                <div>I'm a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection"><img src="bg.png" alt=""></div>
+        </section>
+        <hr>
+        <section class="second">
+            <span class="gray">What I have done so far...</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical"><img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-text">HTML Developer</div>
+                    <div class="vertical-dasc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+                        provident ipsa cum nesciunt numquam tempora adipisci excepturi suscipit eos beatae
+                        exercitationem sed laborum quisquam inventore, omnis, ut, recusandae fugit libero!</div>
+                </div>
+                <div class="vertical"><img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-text">HTML Developer</div>
+                    <div class="vertical-dasc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+                        provident ipsa cum nesciunt numquam tempora adipisci excepturi suscipit eos beatae
+                        exercitationem sed laborum quisquam inventore, omnis, ut, recusandae fugit libero!</div>
+                </div>
+                <div class="vertical"><img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-text">HTML Developer</div>
+                    <div class="vertical-dasc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+                        provident ipsa cum nesciunt numquam tempora adipisci excepturi suscipit eos beatae
+                        exercitationem sed laborum quisquam inventore, omnis, ut, recusandae fugit libero!</div>
+                </div>
+                <div class="vertical"><img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-text">HTML Developer</div>
+                    <div class="vertical-dasc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+                        provident ipsa cum nesciunt numquam tempora adipisci excepturi suscipit eos beatae
+                        exercitationem sed laborum quisquam inventore, omnis, ut, recusandae fugit libero!</div>
+                </div>
+                <div class="vertical"><img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-text">HTML Developer</div>
+                    <div class="vertical-dasc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+                        provident ipsa cum nesciunt numquam tempora adipisci excepturi suscipit eos beatae
+                        exercitationem sed laborum quisquam inventore, omnis, ut, recusandae fugit libero!</div>
+                </div>
+                <div class="vertical"><img class="image-top" src="developer.png" alt="">
+                    <div class="vertical-text">HTML Developer</div>
+                    <div class="vertical-dasc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt
+                        provident ipsa cum nesciunt numquam tempora adipisci excepturi suscipit eos beatae
+                        exercitationem sed laborum quisquam inventore, omnis, ut, recusandae fugit libero!</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="about">
+                <h3>About Me</h3>
+                <p>I'm Aditya, a passionate web developer, cyber security enthusiast, video editor, and graphics designer. Let's create something amazing together!</p>
+            </div>
+            <div class="socials">
+                <h3>Follow Me</h3>
+                <a href="#">LinkedIn</a><br>
+                <a href="#">GitHub</a><br>
+                <a href="#">Twitter</a><br>
+            </div>
+            <div class="contact">
+                <h3>Contact Me</h3>
+                <p>Email: am501700@gmail.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Aditya Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer', 'Cyber Security Enthusiast', 'Video Editor', 'Graphics Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
