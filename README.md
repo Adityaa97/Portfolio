@@ -1,0 +1,1 @@
+Welcome to my Personal Portfolio project! This project showcases my skills, experience, and projects through a visually appealing and interactive personal website. It has been designed using HTML, CSS, and JavaScript.
